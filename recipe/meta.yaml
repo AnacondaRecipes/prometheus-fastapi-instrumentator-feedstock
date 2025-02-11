@@ -12,20 +12,20 @@ source:
 
 build:
   number: 0
-  noarch: python
+  noarch: python >=3.6,<4.0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6,<4.0
     - poetry
     - toml
     - wheel
   run:
     - fastapi
     - prometheus_client
-    - python
+    - python >=3.6,<4.0
 
 test:
   imports:
