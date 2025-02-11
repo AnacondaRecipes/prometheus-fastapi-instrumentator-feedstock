@@ -23,8 +23,8 @@ requirements:
     - toml
     - wheel
   run:
-    - fastapi
-    - prometheus_client
+    - fastapi >=0.38.1,<1.0.0
+    - prometheus_client >=0.8.0,<1.0.0
     - python >=3.6,<4.0
 
 test:
