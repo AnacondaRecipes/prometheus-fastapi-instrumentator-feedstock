@@ -11,7 +11,7 @@ source:
   sha256: be7cd61eeea4e5912aeccb4261c6631b3f227d8924542d79eaf5af3f439cbe5e
 
 build:
-  skip: true # [ py<310 ]
+  skip: true # [py<310]
   number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -20,8 +20,6 @@ requirements:
     - pip
     - python
     - poetry-core >=2.0
-    - toml
-    - fastapi >=0.110.0
   run:
     
     - starlette >=0.30.0,<1.0.0
