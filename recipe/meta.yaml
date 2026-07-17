@@ -18,7 +18,7 @@ requirements:
   host:
     - pip
     - python
-    - poetry-core
+    - poetry-core >=2.0
   run:
     - starlette >=1.0.0,<2.0.0
     - prometheus_client >=0.8.0,<1.0.0
@@ -38,6 +38,7 @@ about:
   description: A configurable and modular Prometheus Instrumentator for your FastAPI
   license: ISC
   license_file: LICENSE
+  license_family: OTHER
   dev_url: https://github.com/trallnag/prometheus-fastapi-instrumentator
   doc_url: https://github.com/trallnag/prometheus-fastapi-instrumentator
 
